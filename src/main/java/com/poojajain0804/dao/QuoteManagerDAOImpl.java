@@ -30,12 +30,14 @@ public class QuoteManagerDAOImpl extends HibernateDaoSupport implements QuoteMan
 		objSession.close();
 	}
 
-	public void updateQuote(Quote quote) {
-		
-	}
 
 	public int deleteQuote(int Id) {
 		return 0;
+	}
+
+	public void updateQuote(QuoteDomain quote) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

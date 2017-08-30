@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.poojajain0804.dao.QuoteManagerDAO;
+import com.poojajain0804.domain.QuoteDomain;
 import com.poojajain0804.model.Quote;
 
 @Service
@@ -25,7 +26,12 @@ public class QuoteManagerServices {
 
 	public void save(Quote newQuote) {
 		
-		objQuoteManagerDAO.save(newQuote);
+		QuoteDomain objQuoteDomain= new QuoteDomain();
+		objQuoteDomain.setAuthor(newQuote.getAuthor());
+		objQuoteDomain.setCategory(newQuote.getCategory());
+		objQuoteDomain.setQuotation(newQuote.getQuotation());
+		
+		objQuoteManagerDAO.save(objQuoteDomain);
 	}
 
 }
