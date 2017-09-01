@@ -13,11 +13,11 @@
 		<center>
 			<h3>Adding New Quote</h3>
 			<form:label path="author">Author: </form:label>
-			<form:input path="author" />
+			<form:input path="author" /><br>
 			<form:label path="category">Category: </form:label>
-			<form:input path="category" />
+			<form:input path="category" /><br>
 			<form:label path="quotation">Words: </form:label>
-			<form:input path="quotation" />
+			<form:input path="quotation" /><br>
 			<input type="submit" value="Save">
 		</center>
 	</form:form>
