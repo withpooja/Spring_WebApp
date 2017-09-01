@@ -10,8 +10,7 @@
 <form action="" method="post"><center>
 	<h1>Quotations Manager</h1>
 		<div><a style="text-align: left;" href="addition"> Add new Quote</a><br><br></div>
-		<div><a style="text-align: center;" href="listing"> List All Quotes</a><br><br></div>
-		<div><a style="text-align: right;" href="editing"> Edit in exiting Quotes</a></div></center>
+		<div><a style="text-align: right;" href="listing"> List all in exiting Quotes</a></div></center>
 </form>
 </body>
 </html>

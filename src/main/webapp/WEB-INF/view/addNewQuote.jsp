@@ -7,8 +7,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Add New Quotation</title>
 </head>
-<body>
-	<form:form modelAttribute="quotationToAdd" action="addNewQuote" method="post">
+<body bgcolor="#FFCB12">
+	<form:form modelAttribute="quotationToAdd" action="/QuoteManager/saveQuote" method="post">
+		<form:hidden path="uid"/>
 		<center>
 			<h3>Adding New Quote</h3>
 			<form:label path="author">Author: </form:label>
